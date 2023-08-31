@@ -4,7 +4,7 @@ A Winston 3.X compatible transport for PostgreSQL. Uses high performance of nati
 
 # Origin
 
-I forked https://github.com/petpano/winston-pg-native so that I could store the meta object as standard JSON. In the original repo it was being processed by flatted `stringify` method which makes it impossible to query directly because it has to be parsed by flatted parse method to make the data intelligible.
+I forked https://github.com/remjx/winston-pg-native which is a fork of https://github.com/petpano/winston-pg-native so that we can push to an app column in the database.
 
 ## Installation
 
