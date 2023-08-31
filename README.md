@@ -10,7 +10,7 @@ I forked https://github.com/remjx/winston-pg-native which is a fork of https://g
 
 ```console
   $ npm install winston
-  $ npm install @markjackson02/winston-pg-native
+  $ npm install @jeffreyflores/winston-pg-native
 ```
 
 You must have a table in your PostgreSQL database, for example:
