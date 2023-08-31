@@ -21,6 +21,7 @@ CREATE TABLE winston_logs
   timestamp timestamp without time zone DEFAULT now(),
   level character varying,
   message character varying,
+  app character varying,
   meta json
 )
 ```
@@ -38,6 +39,7 @@ See the default values used:
 const options = {
   connectionString: 'postgres://username:password@localhost:5432/database',
   level: 'info',
+  app: 'appname',
   poolConfig: {
     // number of milliseconds to wait before timing out when connecting a new client
     // by default this is 0 which means no timeout
@@ -65,6 +67,7 @@ const logger = new Logger({
     new Postgres({
       connectionString,
       level: 'info',
+      app: 'appname',
       poolConfig: {
         connectionTimeoutMillis: 0,
         idleTimeoutMillis: 0,
